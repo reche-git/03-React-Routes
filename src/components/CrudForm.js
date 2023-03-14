@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 const initialForm = {
   name: "",
-  constellation: "",
+  type: "",
   id: null,
 };
 
@@ -55,7 +55,7 @@ export const CrudForm = ({
 
   return (
     <div>
-      <h3>{dataToEdit ? "Edit" : "Add a Knights Of The Zodiac"}</h3>
+      <h3>{dataToEdit ? "Edit" : "Add a Pokemon"}</h3>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -66,10 +66,10 @@ export const CrudForm = ({
         />
         <input
           type="text"
-          name="constellation"
-          placeholder="Constellation"
+          name="type"
+          placeholder="Type"
           onChange={handleChange}
-          value={form.constellation || ""}
+          value={form.type || ""}
         />
         <input type="submit" value="Send" />
         <input type="reset" value="Clean" onClick={handleReset} />
