@@ -10,6 +10,11 @@ html {
 *::before {
   box-sizing: inherit;
 }
+
+body {
+  margin: 1rem;
+}
+
 a {
   margin-right: 1rem;
 }
