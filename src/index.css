@@ -17,6 +17,15 @@ body {
 
 a {
   margin-right: 1rem;
+  color: rgb(97, 252, 59);
+}
+
+a:active {
+ color: rgb(7, 255, 255);
+}
+
+a:visited {
+  color: rgb(7, 255, 255);
 }
 
 li {
