@@ -18,6 +18,7 @@ import User from "../pages/User";
 import MenuConcepts from "./MenuConcepts";
 import Modal from "./Modal";
 import PrivateRoute from "./PrivateRoute";
+import cursorImg from "../assets/cursor.png";
 
 const BasicConcepts = () => {
   const [isOpen, openModal, closeModal] = useModal(false);
@@ -25,7 +26,8 @@ const BasicConcepts = () => {
   return (
     <div>
       <button className="btnModal" onClick={openModal}>
-      <h2>Basic Concepts</h2>
+        <h2>Basic Concepts</h2>
+        <img className="cursorImg" src={cursorImg} alt="Cursor Click" />
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="ExplinationModal">
@@ -90,7 +92,7 @@ const BasicConcepts = () => {
       <HashRouter>
         <MenuConcepts />
         <Switch>
-        <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/user/:username" component={User} />
@@ -109,7 +111,16 @@ const BasicConcepts = () => {
           <Route path="*" component={Error404} />
         </Switch>
       </HashRouter>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };

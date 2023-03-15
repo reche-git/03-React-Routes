@@ -5,6 +5,18 @@
   font-weight: bold;
   background: transparent;
   border: none;
+  position: relative;
+}
+
+.btnModal:hover {
+  color: #51fff6;
+  cursor: pointer;
+}
+.cursorImg {
+  position: absolute;
+  width: 30px;
+  top: 35px;
+  left: 90%;
 }
 
 .modal {

@@ -89,12 +89,6 @@ input[type="reset"] {
   cursor: pointer;
 }
 
-button:hover {
-  background: #51fff6;
-  box-shadow: inset 0px 0px 5px #007c76;
-  outline: none;
-}
-
 input[type="button"]:disabled {
   border-color: rgba(118, 118, 118, 0.3);
   color: rgba(16, 16, 16, 0.3);
