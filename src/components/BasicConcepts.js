@@ -5,6 +5,7 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+import { useModal } from "../hooks/useModal";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Dashboard from "../pages/Dashboard";
@@ -15,12 +16,24 @@ import Products from "../pages/Products";
 import ReactTopics from "../pages/ReactTopics";
 import User from "../pages/User";
 import MenuConcepts from "./MenuConcepts";
+import Modal from "./Modal";
 import PrivateRoute from "./PrivateRoute";
+import cursorImg from "../assets/cursorImg.png"
 
 const BasicConcepts = () => {
+  const [isOpen, openModal, closeModal] = useModal(false);
 
   return (
     <div>
+      <button className="btnModal" onClick={openModal}>
+        <h2>Basic Concepts</h2>
+        <img className="cursorImg" src={cursorImg} alt="Cursor Click" />
+      </button>
+      <Modal isOpen={isOpen} closeModal={closeModal}>
+        <div className="ExplinationModal">
+          <h3>What is React Router?</h3>
+        </div>
+      </Modal>
       <Router>
         <MenuConcepts />
         <Switch>
@@ -84,6 +97,7 @@ const BasicConcepts = () => {
 
 export default BasicConcepts;
 
+//BASIC USAGE POSSIBLE
 // const BasicConcepts = () => {
 //   return (
 //     <div>

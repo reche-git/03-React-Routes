@@ -2,7 +2,7 @@ import BasicConcepts from "./components/BasicConcepts";
 import { CrudApi } from "./components/CrudApi";
 import { SongSearch } from "./components/SongSearch";
 import Modal from "./components/Modal";
-import cursorImg from "./assets/cursor.png";
+import cursorImg from "./assets/cursorImg.png";
 import { useModal } from "./hooks/useModal";
 
 function App() {
