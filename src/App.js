@@ -5,14 +5,15 @@ import { SongSearch } from "./components/SongSearch";
 function App() {
   return (
     <div>
-      <h1>React Router</h1>
-      <a
-        href="https://reactrouter.com/en/main"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Documentation
-      </a>
+      <h1>
+        <a
+          href="https://reactrouter.com/en/main"
+          target="_blank"
+          rel="noreferrer"
+        >
+          React Router Documentation
+        </a>
+      </h1>
       <hr />
       <BasicConcepts />
       <hr />
