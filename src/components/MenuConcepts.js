@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 const MenuConcepts = () => {
   return (
     <nav>
+      <h3>Navs:</h3>
       <ol>
         <li>
           <span>HTML Links (not recommended): </span>
@@ -11,7 +12,7 @@ const MenuConcepts = () => {
           <a href="/contact">Contact</a>
         </li>
         <li>
-          <span>Link Component (React Router): </span>
+          <span>Link Element (React Router): </span>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>

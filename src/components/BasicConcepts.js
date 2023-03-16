@@ -18,7 +18,7 @@ import User from "../pages/User";
 import MenuConcepts from "./MenuConcepts";
 import Modal from "./Modal";
 import PrivateRoute from "./PrivateRoute";
-import cursorImg from "../assets/cursorImg.png"
+import cursorImg from "../assets/cursorImg.png";
 
 const BasicConcepts = () => {
   const [isOpen, openModal, closeModal] = useModal(false);
@@ -31,7 +31,18 @@ const BasicConcepts = () => {
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="ExplinationModal">
-          <h3>What is React Router?</h3>
+          <h3>What would you see in this section?</h3>
+          <p>Item by item:</p>
+          <ol>
+            <li>
+              How the Nav would be with simple a tags (not a SPA since you need
+              to reload the page to show another one or another component).
+            </li>
+            <li>
+              A Nav with a Link element, witch lets the user navigate to another
+              page by clicking or tapping on it. Works similar as the Link element in React Native.
+            </li>
+          </ol>
         </div>
       </Modal>
       <Router>
@@ -52,7 +63,6 @@ const BasicConcepts = () => {
           <Route exact path="/login" component={Login} />
           {/* <Route exact path="/dashboard" component={Dashboard} /> */}
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
-
           <Route path="*" component={Error404} />
         </Switch>
       </Router>
