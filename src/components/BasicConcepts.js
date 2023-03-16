@@ -40,8 +40,22 @@ const BasicConcepts = () => {
             </li>
             <li>
               A Nav with a Link element, witch lets the user navigate to another
-              page by clicking or tapping on it. Works similar as the Link element in React Native.
+              part of the SPA by clicking or tapping on it. Works similar as the
+              Link element in React Native.
             </li>
+            <li>
+              The NavLink tag, this tag is special because it knows whether or
+              not it is "active" or "pending". As it is, you can see how the
+              NavLink "glows" when you are in each part of the SPA respectively.
+            </li>
+            <li>
+              useParams hook returns an object of key/value pairs of the dynamic
+              params from the current URL that were matched by the Route path.
+              We past a key in the path property of our Route, called
+              ":username", witch is going to get inherit by his child "User".
+              Try it! Pick a user name!
+            </li>
+            <li></li>
           </ol>
         </div>
       </Modal>

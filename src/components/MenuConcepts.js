@@ -32,8 +32,8 @@ const MenuConcepts = () => {
         </li>
         <li>
           <span>useParam Hook: </span>
-          <Link to="/user/Hawaiian-Fox">Hawaiian-Fox</Link>
-          <Link to="/user/Rendy">Rendy</Link>
+          <Link to="/user/TooDeveloperForMyShirt995">TooDeveloperForMyShirt995</Link>
+          <Link to="/user/I-Am-The-Documentation">I-Am-The-Documentation</Link>
         </li>
         <li>
           <span>Query Parameters: </span>
