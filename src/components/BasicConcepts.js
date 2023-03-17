@@ -30,8 +30,10 @@ const BasicConcepts = () => {
         <img className="cursorImg" src={cursorImg} alt="Cursor Click" />
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
-        <div className="ExplinationModal">
-          <h3>What would you see in this section?</h3>
+        <div className="ExplinationModal-Two-Rows">
+          <h3 style={{ textAlign: "center" }}>
+            What will you see in this section?
+          </h3>
           <p>Item by item:</p>
           <ol>
             <li>
@@ -71,6 +73,12 @@ const BasicConcepts = () => {
               Here useRouteMatch hook attempts to match the current URL in the
               same way that a Route would. It's mostly useful for getting access
               to the match data without actually rendering a Route.
+            </li>
+            <li>
+              The react private route component renders child components
+              (children) if the user is logged in. If not logged in the user is
+              redirected to the /login page with the return url passed in the
+              location state property. Try our dummy example!
             </li>
           </ol>
         </div>
