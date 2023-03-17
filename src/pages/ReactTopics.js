@@ -20,7 +20,9 @@ const ReactTopics = () => {
     // let match = useRouteMatch();
     // console.log(match);
   //"path" nos permite construir rutas relativas <Route>
-  //"url" nos permite construir enlaces relativos <Link> o <NavLink>
+  //"path" helps construct relative routes in <Route>
+  //"url" nos permite construir enlaces relativos <Link> or <NavLink>
+  //"url" helps construct relative routes in <Link> or <NavLink>
 
   let { path, url } = useRouteMatch();
   return (

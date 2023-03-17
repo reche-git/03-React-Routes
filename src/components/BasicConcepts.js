@@ -67,6 +67,11 @@ const BasicConcepts = () => {
               location in the history stack. The links are in spanish but they
               will send you to their english respective paths.
             </li>
+            <li>
+              Here useRouteMatch hook attempts to match the current URL in the
+              same way that a Route would. It's mostly useful for getting access
+              to the match data without actually rendering a Route.
+            </li>
           </ol>
         </div>
       </Modal>
@@ -98,18 +103,27 @@ const BasicConcepts = () => {
         <MenuConcepts />
         <Switch>
           <Route exact path="/" component={Home} />
+
           <Route exact path="/about" component={About} />
+
           <Route exact path="/contact" component={Contact} />
+
           <Route exact path="/user/:username" component={User} />
+
           <Route exact path="/products" component={Products} />
+
           <Route exact path="/acerca">
             <Redirect to="/about" />
           </Route>
+
           <Route exact path="/contacto">
             <Redirect to="/contact" />
           </Route>
+
           <Route path="/react" component={ReactTopics} />
+
           <Route exact path="/login" component={Login} />
+
           {/* <Route exact path="/dashboard" component={Dashboard} /> */}
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
 
@@ -160,6 +174,7 @@ export default BasicConcepts;
 //               <>
 //                 <Contact />
 //                 <p>Papas Friiitaaaaas :D</p>
+//                 <p>Potato Chiiiiiiiips :D</p>
 //               </>
 //             }
 //           />
