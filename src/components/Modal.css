@@ -157,7 +157,7 @@
 
 .mouseSvg {
   position: absolute;
-  width: 40px;
+  width: 35px;
   top: 60%;
   left: 1.5rem;
   animation: mouseShaske .4s 5;
