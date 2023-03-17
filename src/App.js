@@ -25,7 +25,7 @@ function App() {
             history features while preserving the right application view.
           </p>
           <p>
-            Here you're gonna see the basics concepts on use to show the
+            Here you're gonna see the basics concepts on use to show my
             understandment about this library.
           </p>
         </div>

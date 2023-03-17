@@ -55,7 +55,18 @@ const BasicConcepts = () => {
               ":username", witch is going to get inherit by his child "User".
               Try it! Pick a user name!
             </li>
-            <li></li>
+            <li>
+              Using useLocation hook to returns the current location object.
+              This can be useful if you'd like to perform some side effect
+              whenever the current location changes. Use my dummy pagination
+              component and check the URL.
+            </li>
+            <li>
+              With the use of the Redirect component you can quickly navigate to
+              a new location. The new location will override the current
+              location in the history stack. The links are in spanish but they
+              will send you to their english respective paths.
+            </li>
           </ol>
         </div>
       </Modal>
