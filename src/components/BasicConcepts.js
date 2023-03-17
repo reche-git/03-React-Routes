@@ -19,6 +19,7 @@ import MenuConcepts from "./MenuConcepts";
 import Modal from "./Modal";
 import PrivateRoute from "./PrivateRoute";
 import cursorImg from "../assets/cursorImg.png";
+import mouse from "../assets/mouse.svg"
 
 const BasicConcepts = () => {
   const [isOpen, openModal, closeModal] = useModal(false);
@@ -30,6 +31,7 @@ const BasicConcepts = () => {
         <img className="cursorImg" src={cursorImg} alt="Cursor Click" />
       </button>
       <Modal isOpen={isOpen} closeModal={closeModal}>
+        <img className="mouseSvg" src={mouse} alt="ScrollMouse" />
         <div className="ExplinationModal-Two-Rows">
           <h3 style={{ textAlign: "center" }}>
             What will you see in this section?

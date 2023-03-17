@@ -155,5 +155,23 @@
   );
 }
 
-/* Explination Modal with two columns */
+.mouseSvg {
+  position: absolute;
+  width: 40px;
+  top: 60%;
+  left: 1.5rem;
+  animation: mouseShaske .4s 5;
+  animation-delay: 1s;
+}
 
+@keyframes mouseShaske {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
