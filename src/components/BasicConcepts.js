@@ -19,7 +19,7 @@ import MenuConcepts from "./MenuConcepts";
 import Modal from "./Modal";
 import PrivateRoute from "./PrivateRoute";
 import cursorImg from "../assets/cursorImg.png";
-import mouse from "../assets/mouse.svg"
+import mouse from "../assets/mouse.svg";
 
 const BasicConcepts = () => {
   const [isOpen, openModal, closeModal] = useModal(false);
@@ -78,9 +78,11 @@ const BasicConcepts = () => {
             </li>
             <li>
               The react private route component renders child components
-              (children) if the user is logged in. If not logged in the user is
+              (children) if the user is logged in. If not logged in, the user is
               redirected to the /login page with the return url passed in the
-              location state property. Try our dummy example!
+              location state property. This dummy example is made so you are not
+              loged in, if you press the Dashboard Link the page will redirect
+              you to the Home.
             </li>
           </ol>
         </div>

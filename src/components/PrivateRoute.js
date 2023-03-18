@@ -12,12 +12,12 @@ import { Redirect, Route } from "react-router-dom";
 
 // Simulate Authentication:
 let auth;
-auth = true;
-// auth = null;
+// auth = true;
+auth = null;
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   return (
-    <Route {...rest}>{auth ? <Component /> : <Redirect to="/login" />}</Route>
+    <Route {...rest}>{auth ? <Component /> : <Redirect to="/" />}</Route>
   );
 };
 

@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div>
+    <div className="page-containter">
       <h3>Home</h3>
       <p>Wellcome to the React Router Lesson!</p>
     </div>

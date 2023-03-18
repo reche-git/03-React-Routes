@@ -165,3 +165,11 @@ td {
     gap: 2rem;
   }
 }
+
+/* PAGES STYLES */
+
+.page-containter {
+  text-align: center;
+  border-top: 1px dashed rgb(255, 255, 255);
+  border-bottom: 1px dashed rgb(255, 255, 255);
+}

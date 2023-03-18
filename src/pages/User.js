@@ -4,7 +4,7 @@ const User = () => {
   let { username } = useParams();
 
   return (
-    <div>
+    <div className="page-containter">
       <h3>User Page!</h3>
       <p>
         User Name: <b>{username}</b>
