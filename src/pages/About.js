@@ -1,11 +1,20 @@
 const About = () => {
   return (
     <div className="page-containter">
-      <h3>About</h3>
+      <h3>About me!</h3>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque deserunt
-        illo hic fugit ad delectus assumenda cum quo soluta quis, sint odit a
-        mollitia dolore dolorum ipsum natus autem itaque?
+        I'm a QA Tester interested in front-end development! Check my{" "}
+        <a href="https://github.com/reche-git" style={{ marginRight: "0px" }}>
+          GitHub
+        </a>{" "}
+        repository and{" "}
+        <a
+          href="https://www.linkedin.com/in/alan-reche-5b651122a/"
+          style={{ marginRight: "0px" }}
+        >
+          LinkedIn
+        </a>
+        !
       </p>
     </div>
   );
