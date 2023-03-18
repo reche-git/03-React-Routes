@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
 
 const initialForm = {
   name: "",
@@ -14,7 +13,6 @@ export const CrudForm = ({
   setDataToEdit,
 }) => {
   const [form, setForm] = useState({ initialForm });
-  let history = useHistory()
 
   useEffect(() => {
     if(dataToEdit) {
@@ -34,7 +32,7 @@ export const CrudForm = ({
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!form.name || !form.constellation) {
+    if (!form.name || !form.type) {
       alert("Data Incomplete");
       return;
     }
@@ -50,7 +48,6 @@ export const CrudForm = ({
   const handleReset = (e) => {
     setForm(initialForm);
     setDataToEdit(null);
-    history.push("/");
   };
 
   return (

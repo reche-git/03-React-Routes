@@ -7,9 +7,9 @@ export const CrudTable = ({ data, setDataToEdit, deleteData }) => {
       <h3>Data Table</h3>
       <table>
         <thead>
-          <tr>
+          <tr >
             <th>Name</th>
-            <th>Constellation</th>
+            <th>Type</th>
             <th>Actions</th>
           </tr>
         </thead>

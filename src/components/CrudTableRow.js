@@ -1,23 +1,15 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
+import React from 'react'
 
-export const CrudTableRow = ({ el, setDataToEdit, deleteData }) => {
-  let { name, constellation, id } = el;
-  let history = useHistory();
-
-  const handleEdit = () => {
-    setDataToEdit(el);
-    history.push(`/edit/${id}`);
-  };
-
+export const CrudTableRow = ({el, setDataToEdit, deleteData}) => {
+  let{ name, type, id} = el
   return (
     <tr>
-      <td>{name}</td>
-      <td>{constellation}</td>
-      <td>
-        <button onClick={handleEdit}>Edit</button>
-        <button onClick={() => deleteData(id)}>Delete</button>
-      </td>
-    </tr>
-  );
-};
+            <td>{name}</td>
+            <td>{type}</td>
+            <td>
+              <button onClick={() => setDataToEdit(el)}>Edit</button>
+              <button onClick={() => deleteData(id)}>Delete</button>
+            </td>
+          </tr>
+  )
+}

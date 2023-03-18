@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div className="page-containter">
       <h3>Login</h3>
-      <form style={{ display: "flex" }}>
+      <form style={{ display: "flex", justifyContent: "center" }}>
         <input
           type="text"
           style={{
@@ -27,6 +27,7 @@ const Login = () => {
           style={{
             height: "20px",
             marginTop: "13px",
+            marginLeft: "15px",
             background: "transparent",
           }}
         >

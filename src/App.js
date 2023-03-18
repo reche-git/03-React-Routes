@@ -1,9 +1,10 @@
 import BasicConcepts from "./components/BasicConcepts";
-import { CrudApi } from "./components/CrudApi";
-import { SongSearch } from "./components/SongSearch";
+// import { CrudApi } from "./components/CrudApi";
+// import { SongSearch } from "./components/SongSearch";
 import Modal from "./components/Modal";
 import cursorImg from "./assets/cursorImg.png";
 import { useModal } from "./hooks/useModal";
+import { CrudApp } from "./components/CrudApp";
 
 function App() {
   const [isOpen, openModal, closeModal] = useModal(false);
@@ -33,9 +34,10 @@ function App() {
       <hr />
       <BasicConcepts />
       <hr />
-      <SongSearch />
+      <CrudApp />
+      {/* <SongSearch /> */}
       <hr />
-      <CrudApi />
+      {/* <CrudApi /> */}
     </div>
   );
 }
