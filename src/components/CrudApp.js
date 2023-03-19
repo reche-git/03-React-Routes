@@ -58,7 +58,6 @@ export const CrudApp = () => {
 
   return (
     <div className="ComponentContainer">
-      <h2>CRUD App</h2>
       <article className="grid-1-2">
         <CrudForm
           createData={createData}

@@ -23,6 +23,7 @@ import mouse from "../assets/mouse.svg";
 
 const BasicConcepts = () => {
   const [isOpen, openModal, closeModal] = useModal(false);
+  const [isOpen2, openModal2, closeModal2] = useModal(false);
 
   return (
     <div>
@@ -33,7 +34,7 @@ const BasicConcepts = () => {
       <Modal isOpen={isOpen} closeModal={closeModal}>
         <img className="mouseSvg" src={mouse} alt="ScrollMouse" />
         <div className="ExplinationModal-Two-Rows">
-          <h3 style={{ textAlign: "center" }}>
+          <h3 style={{ textAlign: "center", fontSize: "30px" }}>
             What will you see in this section?
           </h3>
           <p>Item by item:</p>
@@ -110,7 +111,36 @@ const BasicConcepts = () => {
       </Router>
       <br />
       <hr />
-      <h2>Hash Router</h2>
+      <button className="btnModal" onClick={openModal2}>
+        <h2>Hash Router</h2>
+        <img className="cursorImg" src={cursorImg} alt="Cursor Click" />
+      </button>
+      <Modal isOpen={isOpen2} closeModal={closeModal2}>
+        <div className="ExplinationModal-Two-Rows">
+          <h3 style={{ textAlign: "center" }}>
+            The HashRouter portion of the project!
+          </h3>
+          <p>
+            HashRouteris for use in web browsers when the URL should not (or
+            cannot) be sent to the server for some reason. This may happen in
+            some shared hosting scenarios where you do not have full control
+            over the server. In these situations, HashRouter makes it possible
+            to store the current location in the hash "#" portion of the current
+            URL, so it is never sent to the server.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            I made a SPA with Vanilla JS using the hash method, it's simpler to
+            understand there. Check it out on my{" "}
+            <a
+              href="https://github.com/reche-git"
+              style={{ marginRight: "0px" }}
+            >
+              GitHub
+            </a>{" "}
+            repository!
+          </p>
+        </div>
+      </Modal>
       <HashRouter>
         <MenuConcepts />
         <Switch>
