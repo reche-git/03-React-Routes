@@ -27,7 +27,7 @@ function App() {
           </p>
           <p>
             Here you're gonna see the basics concepts on use to show my
-            understandment about this library.
+            understanding about this library.
           </p>
           <p style={{ textAlign: "center" }}>
             <a
