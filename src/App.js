@@ -29,6 +29,24 @@ function App() {
             Here you're gonna see the basics concepts on use to show my
             understandment about this library.
           </p>
+          <p style={{ textAlign: "center" }}>
+            <a
+              href="https://github.com/reche-git"
+              style={{ marginRight: "0px" }}
+              rel="noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>{" "}
+            <a
+              href="https://www.linkedin.com/in/alan-reche-5b651122a/"
+              style={{ marginRight: "0px" }}
+              rel="noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </p>
         </div>
       </Modal>
       <hr />
