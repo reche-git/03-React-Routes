@@ -6,6 +6,8 @@ export const Contact = () => {
         Go to my{" "}
         <a
           href="https://www.linkedin.com/in/alan-reche-5b651122a/"
+          rel="noreferrer"
+          target="_blank"
           style={{ marginRight: "0px" }}
         >
           LinkedIn!
