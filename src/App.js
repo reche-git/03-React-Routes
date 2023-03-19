@@ -32,17 +32,17 @@ function App() {
           <p style={{ textAlign: "center" }}>
             <a
               href="https://github.com/reche-git"
-              style={{ marginRight: "0px" }}
               rel="noreferrer"
               target="_blank"
+              style={{ marginRight: "5px" }}
             >
               GitHub
             </a>{" "}
             <a
               href="https://www.linkedin.com/in/alan-reche-5b651122a/"
-              style={{ marginRight: "0px" }}
               rel="noreferrer"
               target="_blank"
+              style={{ marginLeft: "5px" }}
             >
               LinkedIn
             </a>
